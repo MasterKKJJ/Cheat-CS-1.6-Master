@@ -4,11 +4,15 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
-
+using Veldrid.MetalBindings;
+using CS16Aimbot;
 namespace CS16Aimbot
 {
     public class Entity
     {
+        
+
+
         public IntPtr Address { get; set; }
         public Vector3 Position { get; set; }
         
@@ -17,7 +21,12 @@ namespace CS16Aimbot
         public int ID { get; set; }
         public float Distance { get; set; }
 
-        public override string ToString()
+
+
+		
+
+
+		public override string ToString()
         {
             StringBuilder stringBuilder = new();
             stringBuilder.Append("Id: "+ID);
